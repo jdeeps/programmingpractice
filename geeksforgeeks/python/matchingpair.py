@@ -19,6 +19,13 @@ class Solution:
             if list[i] in matching_list:
                return i+1
             matching_list.append(list[i])
+        # Above for loop possibly was taking more time to execute for bigger inputs. I got time error while executing that in GEEKSforGEEKS platform
+        # Hence, the I replaced above code with the following and it worked. 
+        # However, see that it will work only if our list goes in a sequence as I am only maching the first element
+        # Code replacement for - LOC : 17-21
+        for i in range(1,len(list)):
+             if list[0] == list[i]:
+               return i+1
 
 #{
 #  Driver Code Starts
