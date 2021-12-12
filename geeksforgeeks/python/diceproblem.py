@@ -5,7 +5,7 @@
 #  The numbers are in the range of 1 to 6, like any ordinary dice.
 #  You will be provided with a face of this cube, your task is to guess the number on the opposite face of the cube.}
 # -------------------------------------------------------------------------------------------------------------------------
-
+# THIS IS NOT A GOOD SOLUTION. I WILL COME UP WITH OTHER ONE.
 class Solution:
     def oppositeFaceOfDice(self, N):
         if N == 1:
